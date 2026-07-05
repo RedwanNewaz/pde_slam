@@ -8,7 +8,7 @@ defaults:
   - sim: default
   - filter: default
   - map: quadtree
-  - method: all
+  - method: slam_only
   - viz: default
   - _self_
 

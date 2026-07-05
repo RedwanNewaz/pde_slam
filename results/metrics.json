@@ -1,42 +1,28 @@
 {
-  "steps": 6,
+  "steps": 500,
   "laps": 2,
-  "particles": 100,
+  "particles": 500,
   "methods": [
-    "slam",
-    "dr",
-    "oracle"
+    "slam"
   ],
-  "wall_time_s": 1.6,
+  "wall_time_s": 43.6,
   "slam": {
-    "rmse": 0.052474112048114106,
-    "final_error": 0.0528967245880534,
-    "rmse_lap1": 0.052474112048114106,
-    "rmse_lap2": NaN
-  },
-  "dr": {
-    "rmse": 0.01951986727419896,
-    "final_error": 0.030317587734333806,
-    "rmse_lap1": 0.01951986727419896,
-    "rmse_lap2": NaN
-  },
-  "oracle": {
-    "rmse": 0.5941860408234113,
-    "final_error": 0.4388277276874734,
-    "rmse_lap1": 0.5941860408234113,
-    "rmse_lap2": NaN
+    "rmse": 0.49714361674495755,
+    "final_error": 0.21602209407516856,
+    "rmse_lap1": 0.49754753710913563,
+    "rmse_lap2": 0.21602209407516856
   },
   "field_rmse": {
-    "u": 0.457385833039204,
-    "v": 0.30243153305777304,
-    "h": 12.975611768160263,
-    "h_field_std": 1.6624950453456773,
-    "n_cells": 25
+    "u": 0.6715870132705878,
+    "v": 0.5467445801179002,
+    "h": 3.984841290080242,
+    "h_field_std": 4.216708735227964,
+    "n_cells": 219
   },
   "efficiency": {
-    "train_steps_gated": 0,
-    "train_steps_all_leaves": 48,
-    "saving_factor": 48.0,
+    "train_steps_gated": 3680,
+    "train_steps_all_leaves": 4000,
+    "saving_factor": 1.09,
     "mean_active_leaves": 1.0,
     "final_leaves": 1
   }

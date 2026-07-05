@@ -120,6 +120,8 @@ ipython_config.py
 
 __pycache__/
 Thirdparty/
+.vscode
+
 
 # Hydra per-run output directories (logs + resolved config snapshots)
 outputs/

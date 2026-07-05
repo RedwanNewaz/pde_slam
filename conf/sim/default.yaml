@@ -2,7 +2,7 @@
 dt: 0.1
 laps: 2
 seed: 42
-steps: null              # null -> laps * (one lap of control inputs)
+steps: 500              # null -> laps * (one lap of control inputs)
 
 # actuation noise applied to the true robot (v [m/s], omega [deg/s])
 act_noise_v: 0.2
