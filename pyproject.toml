@@ -7,16 +7,13 @@ requires-python = ">=3.10"
 dependencies = [
     "numpy>=2.0",
     "matplotlib>=3.9",
-    "jax>=0.6",
-]
-
-[project.optional-dependencies]
-# GPU support: `uv sync --extra cuda` on a Linux machine with an NVIDIA GPU
-# (CUDA 12 driver). JAX picks the GPU automatically once the plugin is
-# installed - no code changes needed. On Windows, use WSL2 for GPU;
-# native Windows JAX is CPU-only, and this extra is a no-op there.
-cuda = [
+    "hydra-core>=1.3",
+    # GPU by default on Linux with an NVIDIA GPU (CUDA 12 driver): the
+    # cuda12 plugin ships the CUDA libraries and JAX picks the GPU
+    # automatically - no code changes needed. Non-Linux (e.g. native
+    # Windows) falls back to the CPU-only wheel; use WSL2 for GPU there.
     "jax[cuda12]>=0.6; sys_platform == 'linux'",
+    "jax>=0.6; sys_platform != 'linux'",
 ]
 
 [tool.uv]

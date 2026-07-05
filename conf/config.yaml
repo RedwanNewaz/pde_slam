@@ -1,0 +1,21 @@
+# PDE SLAM experiment configuration (Hydra).
+#
+# Compose groups on the command line, e.g.
+#   uv run python run_experiment.py method=slam_only
+#   uv run python run_experiment.py sim.laps=3 filter.n_particles=800
+#   uv run python run_experiment.py viz.save_animation=true viz.animate=false
+defaults:
+  - sim: default
+  - filter: default
+  - map: quadtree
+  - method: all
+  - viz: default
+  - _self_
+
+hydra:
+  job:
+    # keep the working directory at the repo root so `data/` and the
+    # configured results dir resolve relative to the project, not the run dir
+    chdir: false
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}

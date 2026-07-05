@@ -1,0 +1,12 @@
+# ground-truth simulation and sensing
+dt: 0.1
+laps: 2
+seed: 42
+steps: null              # null -> laps * (one lap of control inputs)
+
+# actuation noise applied to the true robot (v [m/s], omega [deg/s])
+act_noise_v: 0.2
+act_noise_w_deg: 8.0
+
+# sensor noise on the (u, v, h) field measurement
+meas_std: [0.2, 0.2, 0.1]

@@ -1,0 +1,4 @@
+# compare PDE SLAM against the known-field oracle (no dead reckoning)
+pde_slam: true
+dead_reckoning: false
+oracle: true

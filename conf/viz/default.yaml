@@ -1,0 +1,11 @@
+# visualization and outputs
+results_dir: results     # relative to repo root (cwd stays there; see hydra.job.chdir)
+
+animate: true            # show a live window (auto-disabled with no $DISPLAY)
+save_animation: true     # write an animation file of the run
+anim_format: mp4         # mp4 (ffmpeg) or gif (pillow)
+anim_stride: 5           # redraw / capture every N steps
+fps: 20                  # animation playback frame rate
+dpi: 100                 # animation resolution
+
+static_plots: true       # also write the summary PNGs and metrics.json

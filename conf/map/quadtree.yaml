@@ -1,0 +1,10 @@
+# adaptive quadtree PINN map (Method 2)
+seed: null               # null -> inherit sim.seed
+max_depth: 3
+max_leaves: 48
+split_min_obs: 60
+split_h_rmse: 0.3
+
+# training / refinement schedule
+train_iters: 8           # gradient steps per active leaf per step
+split_check_every: 25    # steps between refinement (split) checks

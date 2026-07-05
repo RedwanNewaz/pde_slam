@@ -1,0 +1,11 @@
+# Rao-Blackwellized particle filter (shared by the SLAM and oracle estimators)
+n_particles: 500
+
+# initial pose spread [x, y, theta_deg, v]
+init_std: [1.0, 1.0, 15.0, 0.5]
+
+# noise diagonals; null -> use RBPFSLAM built-in defaults
+process_noise: null          # motion [v, omega_deg]
+measurement_noise: null      # [u, v, h]
+lin_process_noise: null      # field drift [du, dv, dh]
+p0_lin: null                 # initial KF cov [du, dv, dh]

@@ -1,0 +1,4 @@
+# run PDE SLAM together with both baselines (full comparison)
+pde_slam: true
+dead_reckoning: true
+oracle: true

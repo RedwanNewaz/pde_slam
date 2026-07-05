@@ -1,0 +1,17 @@
+{
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/redwan/ros2_ws/build/spot_state_decoder",
+        "/home/redwan/ros2_ws/install/spot_state_decoder/lib/python3.10/site-packages",
+        "/home/redwan/ros2_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/redwan/ros2_ws/build/spot_state_decoder",
+        "/home/redwan/ros2_ws/install/spot_state_decoder/lib/python3.10/site-packages",
+        "/home/redwan/ros2_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

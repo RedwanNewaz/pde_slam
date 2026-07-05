@@ -1,0 +1,4 @@
+# run only PDE SLAM (our method), no baselines
+pde_slam: true
+dead_reckoning: false
+oracle: false

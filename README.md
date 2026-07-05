@@ -20,9 +20,18 @@ Method 2 of `Manuscript/PDE_SLAM_OnePager.md`.
   Baselines: dead reckoning and an oracle RBPF with the true field (= the paper's
   localization setting). Outputs to `results/`.
 
-Run: `python3 run_experiment.py` (needs `numpy`, `jax`, `matplotlib`; sibling
-directory `pde_localization` for trajectory + data). Env overrides:
-`PDESLAM_STEPS`, `PDESLAM_SEED`.
+## Setup & run (uv)
+
+```bash
+uv sync                    # CPU (any OS)
+uv sync --extra cuda       # Linux + NVIDIA GPU (CUDA 12); JAX uses it automatically
+uv run python run_experiment.py
+```
+
+The first line printed reports the JAX backend (`cpu` / `gpu`). Needs the
+sibling directory `pde_localization` for trajectory + data. On Windows, native
+JAX is CPU-only — use WSL2 for GPU. Env overrides: `PDESLAM_STEPS`,
+`PDESLAM_SEED`.
 
 ## Key design decisions (each fixes a observed failure mode)
 
