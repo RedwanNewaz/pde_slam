@@ -1,0 +1,24 @@
+[project]
+name = "pde-slam"
+version = "0.1.0"
+description = "PDE SLAM with adaptive quadtree PINN map (Method 2) - extension of the IROS 2026 PDE localization paper"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+    "jax>=0.6",
+]
+
+[project.optional-dependencies]
+# GPU support: `uv sync --extra cuda` on a Linux machine with an NVIDIA GPU
+# (CUDA 12 driver). JAX picks the GPU automatically once the plugin is
+# installed - no code changes needed. On Windows, use WSL2 for GPU;
+# native Windows JAX is CPU-only, and this extra is a no-op there.
+cuda = [
+    "jax[cuda12]>=0.6; sys_platform == 'linux'",
+]
+
+[tool.uv]
+# dependency-only project (flat scripts, not an importable package)
+package = false

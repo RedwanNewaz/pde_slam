@@ -1,0 +1,38 @@
+{
+  "steps": 998,
+  "laps": 2,
+  "particles": 500,
+  "wall_time_s": 20.6,
+  "slam": {
+    "rmse": 1.6752904143573366,
+    "final_error": 5.342246143480121,
+    "rmse_lap1": 0.4975475351215702,
+    "rmse_lap2": 2.316385631791391
+  },
+  "dr": {
+    "rmse": 2.1251999590405957,
+    "final_error": 1.507202236715366,
+    "rmse_lap1": 0.6313547187073313,
+    "rmse_lap2": 2.938424909875746
+  },
+  "oracle": {
+    "rmse": 0.3771569871104925,
+    "final_error": 0.07578854955362416,
+    "rmse_lap1": 0.5146117843136698,
+    "rmse_lap2": 0.14024798500523764
+  },
+  "field_rmse": {
+    "u": 0.7107664479163059,
+    "v": 0.855604925536229,
+    "h": 3.441573466666381,
+    "h_field_std": 4.314350740378931,
+    "n_cells": 251
+  },
+  "efficiency": {
+    "train_steps_gated": 10708,
+    "train_steps_all_leaves": 16936,
+    "saving_factor": 1.58,
+    "mean_active_leaves": 1.7985971943887775,
+    "final_leaves": 4
+  }
+}
